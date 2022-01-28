@@ -1,7 +1,7 @@
 import axios from 'axios'
 const env = process.env.NODE_ENV 
 console.log('env ->' ,env)
-const API_POST = env === 'development' ? 'http://localhost:3003/' : 'https://goodchildren.net/problems-encyclopedia/'
+const API_POST = env === 'development' ? 'http://10.2.6.162:3003//' : 'https://goodchildren.net/problems-encyclopedia/'
 
 var instance = axios.create({
     baseURL: API_POST,
